@@ -28,6 +28,10 @@ PRODUCT_PACKAGES += \
     libmegface \
     libpiex_shim
 
+# HwControl Hal
+PRODUCT_PACKAGES += \
+    XiaomiPad5HwCtrl
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
