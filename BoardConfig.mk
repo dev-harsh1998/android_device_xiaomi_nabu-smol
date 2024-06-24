@@ -12,7 +12,7 @@ DEVICE_PATH := device/xiaomi/nabu
 BUILD_BROKEN_DUP_RULES := true
 
 # Display
-TARGET_SCREEN_DENSITY := 360
+TARGET_SCREEN_DENSITY := 280
 
 # Sepolicy for HwControl Hal
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/aidl/hwcontrol/sepolicy/private

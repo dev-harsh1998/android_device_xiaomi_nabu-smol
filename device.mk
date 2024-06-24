@@ -12,7 +12,8 @@ $(call inherit-product, device/xiaomi/sm8150-common/msmnile.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+PRODUCT_AAPT_PREF_CONFIG := 420dpi
+PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Audio configs
 PRODUCT_COPY_FILES += \
