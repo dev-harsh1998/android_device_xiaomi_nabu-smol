@@ -10,6 +10,11 @@ TARGET_IS_TABLET := true
 # Inherit from sm8150-common
 $(call inherit-product, device/xiaomi/sm8150-common/msmnile.mk)
 
+# Conditionally inherit GMS makefiles
+ifneq ("$(wildcard vendor/gapps/arm64/arm64-vendor.mk)", "")
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+endif
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := 420dpi
